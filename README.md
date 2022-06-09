@@ -8,13 +8,13 @@ The main purpose of the work is to study the behavior of a neural network for th
 # Dynamic
 
 The dynamics of the pursuer was chosen in the form of
-    \[
+    \
     \begin{cases}
     \dot{x_P}=\cos{\varphi}, & \dot{\varphi}=u,
     \\
     \dot{y_P}=\sin{\varphi}, & |u(t)|\leqslant1
     \end{cases}.
-    \]
+    
     Here $x_P(t)$ and $y_P(t)$ coordinates of the Dubins machine on the Cartesian plane, $\varphi(t)$ the angle between the direction of the pursuer's speed and the abscissa, and $u(t)$ time-dependent control.
     
     The initial conditions of the system are fixed:
@@ -27,13 +27,13 @@ The dynamics of the pursuer was chosen in the form of
     $$\displaystyl J[u] \stackrel{def}{=} \int\limits_0^T dt \rightarrow \underset{u}{\min}.$$
     
     Now let's describe the dynamics of the goal. Since, according to the condition of the problem, the target moves rectilinearly at a constant speed, the parameterized coordinate equations will have the following form:
-    \[
+    \
     \begin{cases}
     x_E(t)=v_x t + x_0
     \\
     y_E(t)=v_y t + y_0
     \end{cases},
-    \]
+    
     where $x_0$ and $y_0$ are arbitrarily chosen constants.
 
 # Additional conditions
