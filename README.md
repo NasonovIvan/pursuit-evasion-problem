@@ -75,6 +75,12 @@ These figures show the evolution of the neural network learning process.
 
 ## Learning result
 
-The figures show the trajectories obtained using a neural network and an analytical solution (the trajectory of the neural network is highlighted in orange, and the analytical trajectory is green. The intercept radius is highlighted in red):
+The figures show the trajectories obtained using a neural network and an analytical solution (The trajectory of the neural network is highlighted in orange, and the analytical trajectory is green. The intercept radius is highlighted in red):
 
 <img src="/images/result_2.png" alt="Result" width="400"/> <img src="/images/result_3.png" alt="Result" width="400"/>
+
+## Conclusion
+
+In the work, two neural network algorithms based on DDPG for the synthesis of trajectories of interception by the Dubins machine of targets moving along a rectilinear trajectory were proposed. The features of the proposed algorithms are their ability to work with the space of continuous actions, the guarantee of learning and working with different relative initial positions of goals and the Dubins machine. Moreover, it is shown that the network in some situations offers the best solution to the interception problem in terms of speed.
+
+The research on this work has been completed. The article was written and submitted to the journal. There is a process of waiting for the second review and preparing for publication.
