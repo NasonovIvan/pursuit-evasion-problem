@@ -50,7 +50,7 @@ The Actor network has four fully connected hidden layers with 256 neurons, with 
 
 The Critic and Actor networks are made up of fully connected $Dance$ layers, for the output values of which the normalization operation and the $Dropout$ method are used, which is effective in combating the problem of retraining neural networks. To calculate the output of the Actor network from the last layer, the hyperbolic tangent activation function is selected.
 
-<img src="/images/actor_model.png" alt="Actor model" width="600"/> <img src="/images/critic_model.png" alt="Critic model" width="400"/> 
+<img src="/images/actor_model.png" alt="Actor model" width="400"/> <img src="/images/critic_model.png" alt="Critic model" width="400"/> 
 
 The Critic network has a complex structure because it takes two input values: the state of the environment and the actions of the pursuer. Next, the layers are connected using the $Concatenate$ method and the values pass through the fully connected layers of the network to the output, which is a layer of unit dimension.
 
@@ -60,5 +60,5 @@ The initial coordinates of the target movement are randomly selected so that the
 
 The figure below shows a graph of the average remuneration for the entire training period. During the training of the model, there is a sharp increase in the value of the agent's reward in the first 100-150 episodes. Filling of the playback buffer $R$ corresponds to this process. Further, the training examples are randomly taken from $R$, the network training process takes place and the resulting tuple of states replaces the old data sample in $R$. At this stage, there is a slow increase in average remuneration.
 
-<img src="/images/avg_reward_500.png" alt="Avg reward" width="700"/>
+<img src="/images/avg_reward_500.png" alt="Avg reward" width="600"/>
 <!-- ![Avg reward](/images/avg_reward_500.png "Avg reward") -->
