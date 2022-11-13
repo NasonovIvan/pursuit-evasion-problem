@@ -62,3 +62,19 @@ The figure below shows a graph of the average remuneration for the entire traini
 
 <img src="/images/avg_reward_500.png" alt="Avg reward" width="600"/>
 <!-- ![Avg reward](/images/avg_reward_500.png "Avg reward") -->
+
+Graphs of dependencies of the error function of the Actor and Critic neural networks were also obtained. They are shown in the figures below, respectively:
+
+<img src="/images/actor_loss.png" alt="Actor loss" width="400"/> <img src="/images/critic_loss.png" alt="Critic loss" width="400"/>
+
+The graphs show a gradual decrease in the value of the loss function with an increase in training episodes, which indicates the correct choice of training coefficients.
+
+These figures show the evolution of the neural network learning process.
+
+<img src="/images/train_1.png" alt="train" width="250"/> <img src="/images/train_5.png" alt="train" width="250"/> <img src="/images/train_3.png" alt="train" width="250"/>
+
+## Learning result
+
+The figures show the trajectories obtained using a neural network and an analytical solution (the trajectory of the neural network is highlighted in orange, and the analytical trajectory is green. The intercept radius is highlighted in red):
+
+<img src="/images/result_2.png" alt="Result" width="400"/> <img src="/images/result_3.png" alt="Result" width="400"/>
