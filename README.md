@@ -50,7 +50,7 @@ The Actor network has four fully connected hidden layers with 256 neurons, with 
 
 The Critic and Actor networks are made up of fully connected $Dance$ layers, for the output values of which the normalization operation and the $Dropout$ method are used, which is effective in combating the problem of retraining neural networks. To calculate the output of the Actor network from the last layer, the hyperbolic tangent activation function is selected.
 
-<img src="/images/actor_model.png" alt="Actor model" width="400"/> <img src="/images/critic_model.png" alt="Critic model" width="400"/> 
+<img src="/images/actor_model.png" alt="Actor model" width="300"/> <img src="/images/critic_model.png" alt="Critic model" width="410"/> 
 
 The Critic network has a complex structure because it takes two input values: the state of the environment and the actions of the pursuer. Next, the layers are connected using the $Concatenate$ method and the values pass through the fully connected layers of the network to the output, which is a layer of unit dimension.
 
