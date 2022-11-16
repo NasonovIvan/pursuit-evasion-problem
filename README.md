@@ -11,9 +11,7 @@ The main purpose of the work is to study the behavior of a neural network for th
 
 On the plane, the problem of the fastest $\delta$-interception by a Dubins machine (pursuer) of a moving object (target) moving along two given trajectories at a constant speed is considered.  The dynamics for the pursuer was chosen:
 
-$$\dot{x_P}=\cos{\varphi}$$
-$$\dot{y_P}=\sin{\varphi}$$
-$$\dot{\varphi}=u,~ |u(t)|\leqslant1$$
+$$\dot{x_P}=\cos{\varphi}, \quad \dot{y_P}=\sin{\varphi}, \quad \dot{\varphi}=u,~ |u(t)|\leqslant1$$
 
 The initial conditions of the system are fixed:
 $$x_P(0) = 0, \quad y_P(0) = 0, \quad \varphi(0) = \frac{\pi}{2}$$
