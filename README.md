@@ -29,6 +29,19 @@ $$\psi = \arctan{ \left( \frac{y_E - y_P}{x_E - x_P} \right)}$$
 We will also introduce a formula for calculating the distance $L$ between agents:
 $$L=\sqrt{(x_P-x_E)^2 + (y_P-y_E)^2}$$
 
+Next, to simplify the study of the problem, we will make the transition to the new coordinates. To do this, you need to be able to compare the current state of agents $S=(x_P, y_P, \varphi, x_E, y_E)$ and the state predicted by the neural network $S'=(x' _P, y' _P, \varphi', x'_E, y'_E)$.
+
+We get the values for the functions of the angles $\psi$ and $\psi'$ from the states $S$ and $S'$, respectively, and also calculate the distance $L'$ when the agents are in the state $S'$. Next, we introduce the angle between the direction of the speed of the pursuer and the line connecting the coordinate points of the agents:
+$$\Theta=\varphi' - \psi'.$$
+
+Now we introduce the rotation speed as a quotient of the difference $\psi' - \psi$ and the time interval $\Delta t$ during which the transition from the state $S$ to the state $S'$ occurred:
+$$\omega = \frac{\phi' - \phi}{\Delta t}.$$
+
+The totality of $(L', \omega, \Theta)$ and there are the desired coordinates in which we will build a neural network solution.
+At the initial moment of time, when the result of the neural network has notyet been received, the coordinates are $(L'(0), \omega(0), \Theta(0))$ arecalculated as follows:
+$$L'(0)=L(S),\quad \omega(0) = 0,\quad \Theta(0) = \varphi(0) - \psi(0),$$
+where $\displaystyle\psi(0) = \arctan{ \left( \frac{y_E(0) - y_P(0)}{x_E(0) - x_P(0)} \right)}$.
+
 ## Deep Deterministic Policy Gradient Algorithm
 
 DDPG is an Actor-Critic algorithm based on a deterministic policy gradient. The DPG (Deterministic Policy Gradient) algorithm consists of a parameterized function Actor $\mu\left(s\mid\theta^{\mu}\right)$, which sets control at the current time by deterministic matching of states with a specific action. The function Critic $Q(s,a)$ is updated using the Bellman equation in the same way as with $Q$-training.  The Actor is updated by applying a chain rule to the expected reward from the initial distribution of $J$ in relation to the parameters of the Actor.
