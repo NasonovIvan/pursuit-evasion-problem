@@ -35,7 +35,7 @@ We get the values for the functions of the angles $\psi$ and $\psi'$ from the st
 $$\Theta=\varphi' - \psi'.$$
 
 Now we introduce the rotation speed as a quotient of the difference $\psi' - \psi$ and the time interval $\Delta t$ during which the transition from the state $S$ to the state $S'$ occurred:
-$$\omega = \frac{\phi' - \phi}{\Delta t}.$$
+$$\omega = \frac{\psi' - \psi}{\Delta t}.$$
 
 The totality of $(L', \omega, \Theta)$ and there are the desired coordinates in which we will build a neural network solution.
 At the initial moment of time, when the result of the neural network has notyet been received, the coordinates are $(L'(0), \omega(0), \Theta(0))$ arecalculated as follows:
