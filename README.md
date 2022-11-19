@@ -94,4 +94,4 @@ The figures show the trajectories obtained using a neural network and an analyti
 
 In the work, two neural network algorithms based on DDPG for the synthesis of trajectories of interception by the Dubins machine of targets moving along a rectilinear trajectory were proposed. The features of the proposed algorithms are their ability to work with the space of continuous actions, the guarantee of learning and working with different relative initial positions of goals and the Dubins machine. Moreover, it is shown that the network in some situations offers the best solution to the interception problem in terms of speed.
 
-The research on this work has been completed. The article was written and submitted to the journal. There is a process of waiting for the second review and preparing for publication.
+The research on this work has been completed. The article was written and submitted to the journal. The article will be published in March 2023 in the journal Automation and Remote Control.
